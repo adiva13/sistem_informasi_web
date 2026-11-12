@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Membuat Form di HTML</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran</h2>
+    <form action="#" method="POST">
+        <p>
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        </p>
+
+        <p>
+            <label for="email">Alamat Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+        </p>
+
+        <p>
+            <label for="password">Kata Sandi:</label><br>
+            <input type="password" id="password" name="password">
+        </p>
+
+        <p>
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="lk" name="jk" value="L"> <label for="lk">Laki-laki</label>
+            <input type="radio" id="pr" name="jk" value="P"> <label for="pr">Perempuan</label>
+        </p>
+
+        <p>
+            <label>Hobi:</label><br>
+            <input type="checkbox" name="hobi" value="coding"> Coding
+            <input type="checkbox" name="hobi" value="desain"> Desain
+            <input type="checkbox" name="hobi" value="membaca"> Membaca
+        </p>
+
+        <p>
+            <label for="kota">Asal Kota:</label><br>
+            <select id="kota" name="kota">
+                <option value="majene">Majene</option>
+                <option value="mamuju">Mamuju</option>
+                <option value="makassar">Makassar</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="alamat">Alamat Lengkap:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="35"></textarea>
+        </p>
+
+        <button type="submit">Daftar Sekarang</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+</html>
